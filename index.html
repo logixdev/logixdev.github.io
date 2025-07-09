@@ -12,45 +12,19 @@
     <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>logixdev</title>
+    <meta name="version" content="2.0"> <!-- Version number in meta tag, numeric value -->
+    <title>logixdev - Flashy Edition</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        nav a {
-            display: block;
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        footer {
-            font-size: 12px;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+
     <header>
         <h1>Hello, world! 👋</h1>
         <h2><a href="https://github.com/logixdev">👨‍💻 GitHub</a></h2>
@@ -72,7 +46,9 @@
     </nav>
 
     <footer>
-        <p>&copy; Michał Kansy</p>
+        <p>&copy; Michał Kansy | <span id="version-info"></span></p> <!-- Placeholder for version info -->
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
